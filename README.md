@@ -49,11 +49,29 @@ Take a look at YouTube video by watching the demo: [Watch the Video](https://you
 
 ## 🔧 Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env.local` file in the root directory:
 
 ```env
-NEXT_PUBLIC_APP_URL=your_app_url
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Supabase Service Role Key (for server-side operations)
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+
+# App Configuration (for metadata and SEO)
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+NEXT_PUBLIC_APP_NAME=View Market
+NEXT_PUBLIC_AUTHOR_NAME=View Market Team
 ```
+
+**Required Variables:**
+- `NEXT_PUBLIC_SUPABASE_URL`: Your Supabase project URL
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Your Supabase anonymous key
+- `SUPABASE_SERVICE_ROLE_KEY`: Your Supabase service role key (for admin operations)
+- `NEXT_PUBLIC_APP_URL`: Your app's URL (use `http://localhost:3000` for development)
+- `NEXT_PUBLIC_APP_NAME`: Your app's name (used in metadata)
+- `NEXT_PUBLIC_AUTHOR_NAME`: Author name (used in metadata)
 
 ## 🚀 Deploy on Vercel
 

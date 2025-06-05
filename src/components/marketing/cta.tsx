@@ -46,7 +46,7 @@ const CTA = () => {
                     <p className="text-sm md:text-lg text-center text-accent-foreground/80 max-w-2xl mx-auto mt-4">
                         Transform your marketing with AI-powered automation. Create campaigns faster, generate better content <span className="hidden lg:inline">and make smarter decisions in minutes.</span>
                     </p>
-                    <Link href="#pricing" className="mt-8">
+                    <Link href="/auth" className="mt-8">
                         <Button size="lg">
                             Let&apos;s get started
                         </Button>

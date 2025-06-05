@@ -151,3 +151,24 @@ img {
   width: 100%;
   color: rgb(23, 23, 23);
 }
+
+/* Auth Layout 50/50 Split */
+.auth-layout-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .auth-layout-left {
+    width: 50vw;
+    flex: 0 0 50vw;
+    max-width: 50vw;
+  }
+
+  .auth-layout-right {
+    width: 50vw;
+    flex: 0 0 50vw;
+    max-width: 50vw;
+  }
+}

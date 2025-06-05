@@ -32,7 +32,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center gap-4">
-                        <Link href="#" className="hidden lg:block">
+                        <Link href="/auth" className="hidden lg:block">
                             <Button variant="blue">
                                 Get Started
                             </Button>
